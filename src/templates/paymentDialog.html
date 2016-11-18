@@ -1,0 +1,93 @@
+<div class="container">
+	<div class="heading">
+		<div class="title">Adding funds</div>
+		<div class="close">
+			<img ng-src="img/icon/close.png" alt="close">
+		</div>
+	</div>
+	<div class="notice">
+		<img ng-src="img/icon/info.png" alt="notice">
+		<div class="info">Dear user, we do not charge any additional fees for loading funds to your balance. You pay only the fee of the payment service that you'll choose.</div>
+	</div>
+	<div class="main">
+		<div class="payment">
+			<div class="group">
+				<div class="amount">
+					<p class="title">Payment amount</p>
+					<p class="description">Fee will be added to amount.</p>
+					<form class="form">
+						<input id="sum" type="number" ng-click="reset={}" ng-model="payment.sum">
+						<label for="sum" ng-class="payment.sum ? 'active-label' : ''">Amount in USD</label>
+						<input type="reset" class="delete" ng-style="reset" ng-click="reset={'visibility':'hidden'}; payment.sum='';" ng-class="payment.sum ? 'active-delete' : ''" value=" ">
+					</form>
+				</div>
+				<div class="available">
+					<p class="balans">$15,230.00</p>
+					<p class="description">Balance</p>
+				</div>
+			</div>
+			<div class="method">
+				<p class="title">Payment method</p>
+				<p class="description">Choose payment method you like: </p>
+			</div>
+		</div>
+		<ul class="systems">
+			<li class="logo">
+				<input type="radio" name="systems" id="paxum" ng-model="payment.system.value" ng-value="1">
+				<label for="paxum"><span></span></label>
+				<div>
+					<img ng-src="img/logo/paxum-logo.png" alt="paxum">
+				</div>
+				<div class="fee">no fee</div>
+			</li>
+			<li class="logo">
+				<input type="radio" name="systems" id="paypal" ng-model="payment.system.value" ng-value="2">
+				<label for="paypal"><span></span></label>
+				<div>
+					<img ng-src="img/logo/paypal-logo.png" alt="paypal">
+				</div>
+				<div class="fee">3.5% fee</div>
+			</li>
+			<li class="logo">
+				<input type="radio" name="systems" id="webmoney" ng-model="payment.system.value" ng-value="3">
+				<label for="webmoney"><span></span></label>
+				<div>
+					<img ng-src="img/logo/webmoney-logo.png" alt="webmoney">
+				</div>
+				<div class="fee">no fee</div>
+			</li>
+			<li class="logo">
+				<input type="radio" name="systems" id="epayservice" ng-model="payment.system.value" ng-value="4">
+				<label for="epayservice"><span></span></label>
+				<div>
+					<img ng-src="img/logo/epayservice-logo.png" alt="epayservice">
+				</div>
+				<div class="fee">no fee</div>
+			</li>
+			<li class="logo">
+				<input type="radio" name="systems" id="checkout" ng-model="payment.system.value" ng-value="5">
+				<label for="checkout"><span></span></label>
+				<div>
+					<img class="img-checkout" ng-src="img/logo/2checkout-logo.png" alt="2checkout">
+				</div>
+				<div class="fee">no fee</div>
+			</li>
+			<li class="logo">
+				<input type="radio" name="systems" id="eCoin" ng-model="payment.system.value" ng-value="6">
+				<label for="eCoin"><span></span></label>
+				<div class="system-name e-coin">eCoin.cc</div>
+				<div class="fee">no fee</div>
+			</li>
+			<li class="logo">
+				<input type="radio" name="systems" id="Wire-transfer" ng-model="payment.system.value" ng-value="7">
+				<label for="Wire-transfer"><span></span></label>
+				<div class="system-name wire-transfer">Wire transfer</div>
+				<div class="fee">no fee, takes 3-5 days</div>
+			</li>
+		</ul>
+		<div class="buttons">
+			<a href="#" class="button cancel" ng-click="closeThisDialog()">Cancel</a>
+			<a href="#" class="button continue" ng-click="payment.sum ? (payment.system.value ? continue(payment) : '') : ''" ng-style="color" ng-class="payment.sum ? (payment.system.value ? color={'color':'#007ff5'} : '') : color={}">Continue</a>
+		</div>
+	</div>
+</div>

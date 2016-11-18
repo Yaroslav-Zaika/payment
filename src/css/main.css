@@ -1,0 +1,363 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto" !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.container {
+	background-color: #ffffff;
+	width: 704px;
+	height: 798px;
+	margin: auto;
+}
+
+.ngdialog-overlay {
+	background-color: #a3a3a3 !important;
+}
+
+body .ngdialog.ngdialog-theme-default {
+	padding: 0;
+}
+
+body .ngdialog.ngdialog-theme-default .ngdialog-content {
+	font-family: "Roboto" !important;
+}
+
+body .ngdialog.ngdialog-theme-default .ngdialog-content {
+	width: 702px !important;
+	line-height: inherit !important;
+	padding: 0 !important;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:before {
+	content: ''!important;
+}
+
+.ngdialog-close:before {
+	content: ''!important;
+}
+
+.heading {
+	background-color: #e3eaf5;
+	height: 45px;
+	padding: 12px 0 0 27px;
+}
+
+.heading .title {
+	font-weight: 300;
+	font-size: 16pt;
+	width: 70%;
+	float: left;
+}
+
+.heading .close {
+	margin-right: 15px;
+	float: right;
+}
+
+.notice {
+	margin-top: 31px;
+	margin-bottom: 34px;
+}
+
+.notice img {
+	margin-left: 27px;
+	float: left;
+}
+
+.notice .info {
+	color: #404040;
+	font-weight: 300;
+	font-size: 14pt;
+	height: 98px;
+	font-size: 11pt;
+	height: 71px;
+	margin-left: 47px;
+	padding-left: 5px;
+}
+
+.main .payment {
+	margin-left: 72px;
+}
+
+.payment .group {
+	height: 191px;
+}
+
+.payment .amount {
+	width: 50%;
+	float: left;
+}
+
+.payment .amount .title {
+	font-weight: 500;
+	font-size: 14pt;
+	margin-bottom: 5px;
+}
+
+.payment .amount .description {
+	font-weight: 300;
+	font-size: 12pt;
+}
+
+.payment .amount input {
+	font-weight: 400;
+	font-size: 12pt;
+}
+
+.form label {
+	color: #dedede;
+	position: absolute;
+	left: 0;
+	cursor: text;
+	transition: .2s ease-out;
+}
+
+.amount input[type="number"] {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #9e9e9e;
+	border-radius: 0;
+	outline: none;
+	width: 145px;
+	padding: 0;
+	box-shadow: none;
+	box-sizing: content-box;
+	transition: all 0.3s;
+}
+
+.amount input[type="number"]:focus + label,
+.payment .amount .active-label {
+	font-weight: 300;
+	font-size: 10pt;
+	top: 1.6rem;
+	transition: all 0.3s;
+}
+
+.amount input[type="number"]:focus ~ .delete,
+.amount .form .active-delete {
+	width: 10px;
+	height: 10px;
+	visibility: visible;
+	position: relative;
+	left: -14px;
+	top: 27px;
+}
+
+.amount .form {
+	position: relative;
+	margin-top: 30px;
+}
+
+.form .delete {
+	width: 10px;
+	height: 10px;
+	visibility: hidden;
+	background: url(../img/icon/delete.png) no-repeat;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	left: -14px;
+	top: 27px;
+}
+
+.form .delete:hover {
+	visibility: visible;
+	position: relative;
+	left: -14px;
+	top: 27px;
+}
+
+.form input[type="reset"] {
+	border: 0;
+	padding: 0;
+}
+
+.payment .available {
+	float: right;
+	margin-right: 72px;
+}
+
+.payment .available .balans {
+	font-weight: 500;
+	font-size: 14pt;
+	margin-bottom: 5px;
+}
+
+.payment .available .description {
+	font-weight: 400;
+	font-size: 12pt;
+	float: right;
+}
+
+.payment .method {
+	clear: both;
+	height: 70px;
+}
+
+.payment .method .title {
+	font-weight: 500;
+	font-size: 16pt;
+}
+
+.payment .method .description {
+	font-weight: 300;
+	font-size: 12pt;
+}
+
+.main .systems {
+	height: 224px;
+	margin: 0;
+	padding-left: 27px;
+}
+
+.main .systems li {
+	width: 33%;
+	height: 52px;
+	float: left;
+	margin-bottom: 32px;
+}
+
+.systems li img {
+	min-width: 117px;
+}
+
+.systems li div {
+	height: 37px;
+}
+
+.systems li .img-checkout {
+	margin-top: 5px;
+}
+
+.systems li .system-name {
+	font-weight: 400;
+	font-size: 16pt;
+	margin: 0 0 0 25px;
+}
+
+.systems li .fee {
+	font-weight: 300;
+	font-size: 12pt;
+	margin: 0 0 0 45px;
+	color: #bfbfbf;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 25px -10px 0;
+	background: url(../img/icon/off.png) no-repeat -2px -2px;
+	cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+	background: url(../img/icon/on.png) -2px -2px;
+}
+
+.logo label {
+	float: left;
+}
+
+.main .buttons {
+	clear: both;
+	margin: 65px 38px 52px;
+}
+
+.buttons .button {
+	font-weight: 400;
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+
+.buttons .cancel {
+	color: #007ff5;
+}
+
+.buttons .continue {
+	color: #a2c5fa;
+	margin-left: 37px;
+}
+
+.button-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.open-dialog {
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+	background-color: #ffffff;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 32px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.open-dialog:focus {
+	outline: none;
+}
+
+.open-dialog:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff', GradientType=0);
+	background-color: #f6f6f6;
+}
+
+.open-dialog:active {
+	position: relative;
+	top: 1px;
+}
